@@ -11,7 +11,8 @@ async function fetchFilters() {
         const filtersContainer = document.querySelector('.filters');
 
         const allButton = document.createElement('button');
-        allButton.className = 'filter-button';
+        allButton.classList.add('filter-button');
+        allButton.classList.add('active');
         allButton.textContent = "Tous";
 
         allButton.addEventListener('click', () => {
@@ -160,6 +161,11 @@ async function loadModalGallery() {
         while (categorySelect.firstChild) {
             categorySelect.removeChild(categorySelect.firstChild);
         }
+
+        const optionEmpty = document.createElement('option');
+            optionEmpty.textContent = "";
+            optionEmpty.value = "";
+            categorySelect.appendChild(optionEmpty);
 
         categories.forEach((category) => {
             const option = document.createElement('option');
