@@ -201,26 +201,6 @@ input[type="submit"]{
 	border-radius: 60px ;
 }
 
-/* input[type="text"],
-input[type="password"],
-input[type="email"] {
-    background-color: white !important; 
-    border: 2px solid #cccccc;
-    padding: 8px;
-    border-radius: 4px;
-    color: #333;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-    box-shadow: 0 0 0px 1000px white inset !important;
-} */
-
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
